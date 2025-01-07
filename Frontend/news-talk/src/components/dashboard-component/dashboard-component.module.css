@@ -6,7 +6,11 @@
 }
 
 .scrollArea{
-    background-color: #F5F5F5 !important;
+    background-color: #6C757D !important;
     height: 100% !important;
     width: 60% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 20px 20px 0px 20px !important;
 }
