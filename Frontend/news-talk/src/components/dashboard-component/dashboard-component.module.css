@@ -1,0 +1,12 @@
+.dashboardWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.scrollArea{
+    background-color: #F5F5F5 !important;
+    height: 100% !important;
+    width: 60% !important;
+}
