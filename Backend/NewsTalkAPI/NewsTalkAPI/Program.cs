@@ -1,3 +1,9 @@
+using NewsTalkAPI.Data;
+using NewsTalkAPI.Data.Daos.Implementations;
+using NewsTalkAPI.Data.Daos.Interfaces;
+using NewsTalkAPI.Service.Implementations;
+using NewsTalkAPI.Service.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +11,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("NewsTalksDB"));
+builder.Services.AddSingleton<MongoDbContext>();
+
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<ICommentDao, CommentDao>();
 
 // Add CORS policy
 var corsPolicy = "AllowReactApp";
