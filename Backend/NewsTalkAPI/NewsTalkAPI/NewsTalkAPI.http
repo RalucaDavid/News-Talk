@@ -1,0 +1,6 @@
+@NewsTalkAPI_HostAddress = http://localhost:5100
+
+GET {{NewsTalkAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
