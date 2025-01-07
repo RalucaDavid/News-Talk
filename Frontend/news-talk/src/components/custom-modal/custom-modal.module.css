@@ -1,0 +1,25 @@
+.modalContent{
+    background-color:  #F5F5F5 !important;
+    border: 5px solid #6C757D !important; 
+    border-radius: 5px  !important; 
+}
+
+.modalHeader{
+    background-color:  #E63946 !important;
+    border-radius: 0px  !important; 
+}
+
+.closeButton{
+    color: #FFFFFF !important;
+}
+
+.closeButton:hover{
+    background-color: transparent !important;
+}
+
+.modalTitle{
+    font-size: 25px !important;
+    font-weight: bold !important;
+    color:  #FFFFFF !important; 
+    padding: 10px !important;
+}

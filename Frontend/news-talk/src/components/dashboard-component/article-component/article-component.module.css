@@ -1,0 +1,15 @@
+.link{
+    color: #457B9D;
+}
+
+.description{
+    color: #6C757D !important;
+}
+
+.link, .description{
+    padding-left: 10px !important;
+}
+
+.articleWrapper{
+    padding: 15px 5px 15px 0px;
+}
