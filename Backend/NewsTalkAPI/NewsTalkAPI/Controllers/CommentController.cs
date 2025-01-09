@@ -20,7 +20,7 @@ namespace NewsTalkAPI.Controllers
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
-        public async Task<IActionResult> AddComment([FromBody] CommentDto commentDto)
+        public async Task<IActionResult> AddComment(CommentDto commentDto)
         {
             try
             {

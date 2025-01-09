@@ -6,10 +6,12 @@ import NewsCard from './news-card';
 import CustomModal from '../custom-modal';
 import ArticleComponent from './article-component';
 import { Dictionary } from '../../dictionaries/en';
+import FormComment from './form-comment';
+import { Article } from '../../models/article';
 
 const DashBoardComponent = () => {
-    const [news, setNews] = useState<any[]>([]);
-    const [currentNews, setCurrentNews] = useState<any | null>(null);
+    const [news, setNews] = useState<Article[]>([]);
+    const [currentNews, setCurrentNews] = useState<Article | null>(null);
 
     const [activeModal, setActiveModal] = useState<string | null>(null);
     const openModal = (modalName: string) => setActiveModal(modalName);
@@ -28,7 +30,7 @@ const DashBoardComponent = () => {
         getNews();
     }, []);
 
-    const handleOnClickNews = (article: any) => {
+    const handleOnClickNews = (article: Article) => {
         setCurrentNews(article);
         openModal('news');
     }
@@ -38,23 +40,23 @@ const DashBoardComponent = () => {
             <div className={classes.dashboardWrapper}>
                 <ScrollArea className={classes.scrollArea}>
                     {news.map((article, index) => (
-                        <NewsCard key={index} src={article.urlToImage} title={article.title} onClick={() => { handleOnClickNews(article) }} />
+                        <NewsCard key={index} src={article.urlToImage} title={article.title} onClick={() => {handleOnClickNews(article)}} />
                     ))}
                 </ScrollArea>
             </div>
             <CustomModal opened={activeModal === 'news'} onClose={closeModal} title={Dictionary.news}>
                 {currentNews && (
                     <ArticleComponent
-                        id={currentNews.id}
                         title={currentNews.title}
                         src={currentNews.urlToImage}
                         description={currentNews.description}
                         link={currentNews.url}
+                        openForm={()=>{openModal('form')}}
                     />
                 )}
             </CustomModal>
-            <CustomModal opened={activeModal === 'faq'} onClose={closeModal} title={Dictionary.addComment}>
-                <p></p>
+            <CustomModal opened={activeModal === 'form'} onClose={closeModal} title={Dictionary.addComment}>
+                {currentNews && <FormComment idNews={currentNews.url} onAutoClose={closeModal}/>}
             </CustomModal>
         </>
     );

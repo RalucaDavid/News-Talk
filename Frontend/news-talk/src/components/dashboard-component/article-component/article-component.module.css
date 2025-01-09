@@ -13,3 +13,14 @@
 .articleWrapper{
     padding: 15px 5px 15px 0px;
 }
+
+.comments{
+    font-weight: bold !important;
+    font-size: 18px !important;
+    margin: 10px 10px 0px 10px !important;
+}
+
+.noComments{
+    margin: 0px 10px 0px 10px !important;
+    font-size: 16px !important;
+}
