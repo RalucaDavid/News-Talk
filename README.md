@@ -28,6 +28,20 @@ News Talk is a web application that allows users to access the latest news and l
    <li>
      <strong>Database:</strong> MongoDB
    </li>
+  <li>
+     <strong>Testing:</strong> 
+     <ul>
+        <li>
+          <strong>Unit Testing:<strong> xUnit, Moq
+        </li>
+        <li>
+          <strong>End-to-end Testing:<strong> Playwright
+        </li>
+        <li>
+          <strong>Performance Testing:<strong> Apache JMeter
+        </li>
+     </ul>
+  </li>
 </ul>
 
 # Photos
