@@ -4,7 +4,7 @@ News Talk is a web application that allows users to access the latest news and l
 # Functional Specifications
 <ul>
   <li>
-    <strong>News Visualizat:</strong> Users can view the latest news articles, each with a representative picture, a clear title, a small description of the article and a direct link to the original source of the article.
+    <strong>News:</strong> Users can view the latest news articles, each with a representative picture, a clear title, a small description of the article and a direct link to the original source of the article.
   </li>
   <li>
     <strong>Comments:</strong> Each news article has a comment section where users can leave opinions and discuss topics.
