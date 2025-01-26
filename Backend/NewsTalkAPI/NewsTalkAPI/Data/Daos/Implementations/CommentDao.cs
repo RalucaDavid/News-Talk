@@ -1,6 +1,8 @@
 ﻿using MongoDB.Driver;
 using NewsTalkAPI.Data.Daos.Interfaces;
 using NewsTalkAPI.Domain.Entities;
+using NewsTalkAPI.Settings.Interfaces;
+using System.Threading.Tasks;
 
 namespace NewsTalkAPI.Data.Daos.Implementations
 {
@@ -8,9 +10,12 @@ namespace NewsTalkAPI.Data.Daos.Implementations
     {
         private readonly IMongoCollection<Comment> _commentsCollection;
 
-        public CommentDao(MongoDbContext dbContext)
+        public CommentDao(IMongoDbSettings settings)
         {
-            _commentsCollection = dbContext.Comments;
+            var client = new MongoClient(settings.ConnectionString);
+            var database = client.GetDatabase(settings.DatabaseName);
+
+            _commentsCollection = database.GetCollection<Comment>(settings.CommentsCollectionName);
         }
 
         public async Task AddComment(Comment comment)

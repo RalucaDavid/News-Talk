@@ -1,8 +1,10 @@
-using NewsTalkAPI.Data;
+using Microsoft.Extensions.Options;
 using NewsTalkAPI.Data.Daos.Implementations;
 using NewsTalkAPI.Data.Daos.Interfaces;
 using NewsTalkAPI.Service.Implementations;
 using NewsTalkAPI.Service.Interfaces;
+using NewsTalkAPI.Settings.Implementations;
+using NewsTalkAPI.Settings.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("NewsTalksDB"));
-builder.Services.AddSingleton<MongoDbContext>();
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection(nameof(MongoDbSettings)));
+builder.Services.AddSingleton<IMongoDbSettings>(sp => sp.GetRequiredService<IOptions<MongoDbSettings>>().Value);
 
 builder.Services.AddScoped<ICommentService, CommentService>();
 builder.Services.AddScoped<ICommentDao, CommentDao>();
@@ -50,3 +52,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }
