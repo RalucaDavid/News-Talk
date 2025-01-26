@@ -56,10 +56,31 @@ News Talk is a web application that allows users to access the latest news and l
 # Installation procedure
 <ul>
   <li>
-     <strong>Backend</strong>
+     <strong>Backend:</strong><br>
+    <strong>Requirements:</strong>
+    <ul>
+      <li>
+        <a href="https://dotnet.microsoft.com/en-us/download">.NET SDK</a> (version 6 or higher)
+      </li>
+       <li>
+        <a href="https://www.mongodb.com/products/tools/compass">MongoDB Compass</a> 
+      </li>
+    </ul>
   </li>
   <li>
-    <strong>Frontend</strong>
+    <strong>Frontend:</strong> <br>
+    <strong>Requirements:</strong>
+    <ul>
+      <li>
+        <a href="https://nodejs.org/en">Node.js</a> (version 16.x or higher)
+      </li>
+       <li>
+        <a href="https://www.npmjs.com/">npm</a> (Node Package Manager)
+      </li>
+      <li>
+        You need to obtain an API key from <a href="https://newsapi.org/">News API</a> to fetch news data.
+      </li>
+    </ul>
   </li>
 </ul>
 
