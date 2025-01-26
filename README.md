@@ -51,7 +51,7 @@ News Talk is a web application that allows users to access the latest news and l
 </ul>
 
 # System Architectural Diagram
-![image](https://github.com/user-attachments/assets/12bfa9c9-f5b8-4a33-b7e9-56f47b156b03)
+![image](https://github.com/user-attachments/assets/24bf6a69-3777-41d4-a742-4d6fc6a019cc)
 
 # Installation procedure
 <ul>
