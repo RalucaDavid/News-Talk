@@ -60,7 +60,10 @@ News Talk is a web application that allows users to access the latest news and l
     <strong>Requirements:</strong>
     <ul>
       <li>
-        <a href="https://dotnet.microsoft.com/en-us/download">.NET SDK</a> (version 6 or higher)
+        <a href="https://visualstudio.microsoft.com/">Visual Studio</a> (ASP.NET and Web Development)
+      </li>
+      <li>
+        <a href="https://www.mongodb.com/">MongoDB</a>
       </li>
        <li>
         <a href="https://www.mongodb.com/products/tools/compass">MongoDB Compass</a> 
@@ -71,6 +74,9 @@ News Talk is a web application that allows users to access the latest news and l
     <strong>Frontend:</strong> <br>
     <strong>Requirements:</strong>
     <ul>
+      <li>
+        <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+      </li>
       <li>
         <a href="https://nodejs.org/en">Node.js</a> (version 16.x or higher)
       </li>
