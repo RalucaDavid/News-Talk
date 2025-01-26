@@ -35,6 +35,9 @@ News Talk is a web application that allows users to access the latest news and l
           <strong>Unit Testing:<strong> xUnit, Moq
         </li>
         <li>
+          <strong>Integration Testing:<strong> xUnit, Mongo2Go
+        </li>
+        <li>
           <strong>End-to-end Testing:<strong> Playwright
         </li>
         <li>
