@@ -1,10 +1,10 @@
-# News Talk
+# Description
 News Talk is a web application that allows users to access the latest news and leave comments on each article.
 
-# Features
+# Functional Specifications
 <ul>
   <li>
-    <strong>News Visualizat:</strong> Users can view the latest news stories, each with a representative picture, a clear title, a small description of the article and a direct link to the original source of the article.
+    <strong>News Visualizat:</strong> Users can view the latest news articles, each with a representative picture, a clear title, a small description of the article and a direct link to the original source of the article.
   </li>
   <li>
     <strong>Comments:</strong> Each news article has a comment section where users can leave opinions and discuss topics.
@@ -17,13 +17,16 @@ News Talk is a web application that allows users to access the latest news and l
   </li>
 </ul>
 
-# Technologies
+# Technical Specifications
 <ul>
    <li>
-     <strong>Frontend:</strong> React, TypeScript, Axios, Node.js, Vite
+     <strong>Frontend:</strong> React, TypeScript, Axios
+   </li>
+  <li>
+     <strong>External APIs:</strong> News API
    </li>
    <li>
-     <strong>Backend:</strong> C#, ASP.NET, Swagger, News API
+     <strong>Backend:</strong> C#, ASP.NET
    </li>
    <li>
      <strong>Database:</strong> MongoDB
@@ -44,6 +47,18 @@ News Talk is a web application that allows users to access the latest news and l
           <strong>Performance Testing:<strong> Apache JMeter
         </li>
      </ul>
+  </li>
+</ul>
+
+# System Architectural Diagram
+
+# Installation procedure
+<ul>
+  <li>
+     <strong>Backend</strong>
+  </li>
+  <li>
+    <strong>Frontend</strong>
   </li>
 </ul>
 
