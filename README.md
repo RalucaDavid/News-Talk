@@ -26,7 +26,7 @@ News Talk is a web application that allows users to access the latest news and l
      <strong>External APIs:</strong> News API
    </li>
    <li>
-     <strong>Backend:</strong> C#, ASP.NET
+     <strong>Backend:</strong> C#, ASP.NET Core
    </li>
    <li>
      <strong>Database:</strong> MongoDB
@@ -51,6 +51,7 @@ News Talk is a web application that allows users to access the latest news and l
 </ul>
 
 # System Architectural Diagram
+![image](https://github.com/user-attachments/assets/12bfa9c9-f5b8-4a33-b7e9-56f47b156b03)
 
 # Installation procedure
 <ul>
